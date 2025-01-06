@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<!-- Coding By CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jovanne Lechon Haus</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <span class="hamburger-btn material-symbols-rounded">menu</span>
+                <h2>Jovanne Lechon Haus</h2>
+            </a>
+            <div id="tabs"></div>
+            <ul class="links">
+                <span class="close-btn material-symbols-rounded">close</span>
+                <li><a  href="#home" class="active">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="login-btn">LOG IN</button>
+        </nav>
+    </header>
+
+    <div class="blur-bg-overlay"></div>
+    <div class="form-popup">
+        <span class="close-btn material-symbols-rounded">close</span>
+        <div class="form-box login">
+            <div class="form-details">
+                <h2>Welcome Back</h2>
+                <p>Please log in using your personal information to stay connected with us.</p>
+            </div>
+            <div class="form-content">
+                <h2>LOGIN</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Password</label>
+                    </div>
+                    <a href="#" class="forgot-pass-link">Forgot password?</a>
+                    <button type="submit">Log In</button>
+                </form>
+                <div class="bottom-link">
+                    Don't have an account?
+                    <a href="#" id="signup-link">Signup</a>
+                </div>
+            </div>
+        </div>
+        <div class="form-box signup">
+            <div class="form-details">
+                <h2>Create Account</h2>
+                <p>To become a part of our community, please sign up using your personal information.</p>
+            </div>
+            <div class="form-content">
+                <h2>SIGNUP</h2>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>First Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Last Name</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Birthday</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" required>
+                        <label>Create password</label>
+                    </div>
+                    <div class="policy-text">
+                        <input type="checkbox" id="policy">
+                        <label for="policy">
+                            I agree the
+                            <a href="#" class="option">Terms & Conditions</a>
+                        </label>
+                    </div>
+                    <button type="submit">Sign Up</button>
+                </form>
+                <div class="bottom-link">
+                    Already have an account? 
+                    <a href="#" id="login-link">Login</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="home">
+        <div class="hero">
+            <h1>Welcome to Jovanne Lechon Haus</h1>
+            <p>Home of the finest roasted pork</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section id="menu" class="section">
+        <h2>Our Menu</h2>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="Lechon.jpg">
+                <h3>Lechon</h3>
+                <h4>Php.599/1kg</h4>
+                <p>Crispy and juicy roasted pork.</p>
+                <a href="#contact" class="buy">buy</a>
+            </div>
+            <div class="menu-item">
+                <img src="sisig.jpg">
+                <h3>Sisig</h3>
+                <h4>Php.149/sulit meal</h4>
+                <p>Perfectly seasoned pork dish with a kick.</p>
+                <a href="#contact" class="buy">buy</a>
+            </div>
+            <div class="menu-item">
+                <img src="Pork Barbeque.jpg">
+                <h3>Pork BBQ</h3>
+                <h4>Php.99/per four stick</h4>
+                <p>Deliciously marinated pork on skewers.</p>
+                <a href="#contact" class="buy">buy</a>
+            </div>
+            <div class="menu-item">
+                <img src="Lechon Belly.jpg">
+                <h3>Lechon Belly</h3>
+                <h4>Php.112/sulit meal</h4>
+                <p>Deliciousl toasted pork</p>
+                <a href="#contact" class="buy">buy</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <p>Jovanne Lechon Haus is a family-owned restaurant serving authentic Filipino roasted pork and other delicious dishes since 1980. Our dedication to quality and tradition makes us the best lechon spot in town.</p>
+    <h2>Branches</h2>
+    <p>Talibon, Bohol</p>
+    <p>Anda, Bohol</p>
+    <p>Tubigon, Bohol</p>
+    <p>Tagbilaran City</p>
+    <h2>Open</h2>
+    <p>11am until 11pm</p>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact Us</h2>
+        <form action="#">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type= "number" placeholder="Your Cellphone Number" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Contact: 09318475078</p>
+        <p>Email:jovanne2002@gmail.com</p>
+        <p>&copy; 2024 Jovanne Lechon Haus. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
